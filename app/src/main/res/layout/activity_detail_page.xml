@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ws.wolfsoft.kwality_food.DetailPageActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.joooonho.SelectableRoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:src="@drawable/pizzo"
+        android:scaleType="centerCrop"
+        app:sriv_left_top_corner_radius="0dip"
+        app:sriv_right_top_corner_radius="0dip"
+        app:sriv_left_bottom_corner_radius="20dip"
+        app:sriv_right_bottom_corner_radius="20dip"
+        app:sriv_oval="false" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back_white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_fav_white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <customfonts.TextViewSFProDisplaySemibold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19.2sp"
+        android:layout_marginTop="19.2dp"
+        android:layout_marginLeft="19.2dp"
+        android:textColor="@color/txt_color"
+        android:text="Paneer Pan Pizza"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.5"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="10dp"
+            style = "?android:attr/ratingBarStyleSmall"
+            android:isIndicator="false"
+            android:theme="@style/RatingBar"/>
+
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all."
+            android:textSize="11.5sp"
+            android:textColor="#a9a9b0"
+            android:layout_marginTop="19.2dp"
+            android:layout_marginLeft="19.2dp"
+            android:layout_marginRight="19.2dp"
+            android:lineSpacingExtra="5dp"/>
+
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="13.4sp"
+            android:text="Sizes"
+            android:layout_marginTop="19.2dp"
+            android:layout_marginLeft="19.2dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="19.2dp"
+                android:paddingRight="19.2dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/red_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="105.6dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medium"
+                            android:textSize="10sp"
+                            android:textColor="@color/red"
+                            android:id="@+id/txt1"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="105.6dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Large"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="105.6dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Small"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="13.4sp"
+            android:text="Crust"
+            android:layout_marginTop="19.2dp"
+            android:layout_marginLeft="19.2dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="19.2dp"
+                android:paddingRight="19.2dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/red_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="105.6dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Standard"
+                            android:textSize="10sp"
+                            android:textColor="@color/red"
+                            android:id="@+id/txt4"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Garlic Roasted"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cheese Burst"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:textSize="13.4sp"
+            android:text="Toppings"
+            android:layout_marginTop="19.2dp"
+            android:layout_marginLeft="19.2dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="19.2dp"
+                android:paddingRight="19.2dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/red_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Standard"
+                            android:textSize="10sp"
+                            android:textColor="@color/red"
+                            android:id="@+id/txt7"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Cheese"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/gray_light_rect">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9.2dp"
+                        android:paddingRight="9.2dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:id="@+id/txt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Spice"
+                            android:textSize="10sp"
+                            android:textColor="#a9a9b0"/>
+
+
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+                        <customfonts.TextViewSFProDisplayMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450"
+                            android:textColor="@color/txt_color"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+    <customfonts.Button_SF_Pro_Display_Semibold
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/red_dark_rect"
+        android:text="Add to Cart"
+        android:textSize="11.5sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="9dp"/>
+
+
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

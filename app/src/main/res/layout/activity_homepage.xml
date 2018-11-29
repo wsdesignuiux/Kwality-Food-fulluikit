@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ws.wolfsoft.kwality_food.Homepage">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="70dp"
+        android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="19.2dp"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_map_point"/>
+
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELIVERY"
+            android:layout_marginLeft="5dp"
+            android:textSize="9.6sp"
+            android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="125dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="5.7dp"
+            android:id="@+id/profile_image"
+            android:layout_width="28.8dp"
+            android:layout_height="28.8dp"
+            android:src="@drawable/pex2" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="19.2dp"
+                android:layout_marginRight="19.2dp"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended"
+                        android:textColor="@color/txt_color"
+                        android:textSize="19.2sp"/>
+
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Based on your purchase history"
+                        android:textSize="11.5sp"
+                        android:textColor="#a9a9b0"/>
+                </LinearLayout>
+
+                <customfonts.TextViewSFProDisplayBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="13.4sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="View All"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.mindorks.placeholderview.SwipePlaceHolderView
+        android:id="@+id/swipeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="19.2dp"
+                android:layout_marginRight="19.2dp"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menu"
+                        android:textColor="@color/txt_color"
+                        android:textSize="19.2sp"/>
+
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What’s on our menu"
+                        android:textSize="11.5sp"
+                        android:textColor="#a9a9b0"/>
+                </LinearLayout>
+
+                <customfonts.TextViewSFProDisplayBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="13.4sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="View All"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_margin="19.21dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="14.4dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="148.8dp"
+                    android:layout_height="148.8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizzo"/>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <customfonts.TextViewSFProDisplaySemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="@color/txt_color"
+                android:text="Veg Pizza"
+                android:layout_marginTop="15dp"/>
+
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starts from ₹199"
+                android:textSize="11.5sp"
+                android:textColor="#a9a9b0"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="14.4dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="148.8dp"
+                        android:layout_height="148.8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pizzo"/>
+                </android.support.v7.widget.CardView>
+
+
+
+
+                <customfonts.TextViewSFProDisplaySemibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="@color/txt_color"
+                    android:text="Veg Pizza"
+                    android:layout_marginTop="15dp"/>
+
+
+                <customfonts.TextViewSFProDisplayRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starts from ₹199"
+                    android:textSize="11.5sp"
+                    android:textColor="#a9a9b0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow"
+        android:layout_above="@+id/linear"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home_red"/>
+
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:background="@color/red"/>
+
+           </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/compass"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_compass_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/line2"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tra_line"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_search_gray"/>
+
+
+            <LinearLayout
+
+                android:id="@+id/line3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tra_line"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_shopping_cart_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:gravity="end"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tra_line"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/line5"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:background="@drawable/tra_line"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
